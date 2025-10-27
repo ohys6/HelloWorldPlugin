@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>com.example.helloworldplugin</id>
+    <name>HelloWorldPlugin</name>
+    <vendor email="ohys6boom@gmail.com" url="https://github.com/ohys6">Ivan Dmitriev</vendor>
+    <description>
+        Простой плагин на Kotlin, который добавляет пункт меню "Say Hello" и показывает окно Hello World.
+    </description>
+
+    <actions>
+        <action id="com.example.helloworldplugin.HelloAction"
+                class="com.example.helloworldplugin.HelloAction"
+                text="Say Hello"
+                description="Показать сообщение Hello World">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
